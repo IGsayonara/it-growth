@@ -1,3 +1,11 @@
 <template lang="pug">
-  v-row index page
+  .custom-wrap
+    h1.text-center Front End
+    AppContent
 </template>
+<script>
+import AppContent from '~/components/AppContent'
+export default {
+  components: { AppContent }
+}
+</script>

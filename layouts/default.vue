@@ -1,33 +1,24 @@
 <template lang="pug">
   v-app
-    Nuxt
-
+    AppHeader
+    v-container#main-content
+      Nuxt
 </template>
 
 <script>
+import AppHeader from '~/components/AppHeader'
 export default {
+  components: { AppHeader },
   data () {
     return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+
     }
   }
 }
 </script>
+
+<style>
+  #main-content{
+    margin-top: 80px;
+  }
+</style>
