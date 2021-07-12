@@ -2,39 +2,24 @@ export const state = () => ({
   counter: 666,
   sections: [
     {
-      title: 'html',
-      items: [
-        {
-          title: 'Basic tags',
-          items: [
-            {
-              title: 'Basic tags',
-            }
-          ]
-        },
-
-        {
-          title: 'Html5 tags'
-        },
-        {
-          title: 'Structure'
-        },
-        {
-          title: 'Attributes'
-        },
-        {
-          title: 'Selectors'
-        },
-        {
-          title: 'W3C'
-        },
-        {
-          title: 'Cross Browsers'
-        }
-      ]
+      id: 1,
+      title: 'html'
     },
-    { title: 'css' },
-    { title: 'js' }
+    {
+      id: 2,
+      title: 'css'
+    },
+    {
+      id: 3,
+      title: 'js'
+    },
+  ],
+  posts: [
+    {
+      id: 1,
+      title: 'W3C',
+      parentId: 1
+    },
   ]
 })
 
